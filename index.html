@@ -17,9 +17,9 @@
     </div>
     <!--Pre-game Screen-->
     <div class="screen">
-      <input type="text" id="name" placeholder="Name"></form>
-      <input type="text" id="teamNum" placeholder="Team Number"></form>
-      <input type="text" id="matchNum" placeholder="Match Number"></form>
+      <input type="text" id="name" placeholder="Name"></input>
+      <input type="text" id="teamNum" placeholder="Team Number"></input>
+      <input type="text" id="matchNum" placeholder="Match Number"></input>
       <div class="head">Color</div>
       <div id="spacer">
         <input type="checkbox" id="red"/>
@@ -246,17 +246,81 @@
       <input type="checkbox" id="gray">
       </div>
     </div>
+
+
+    <!--Postgame Screen-->
     <div class="screen">
-      post
+      <div class="head">Post</div>
+      <div class="head">Cards</div>
+      <div class="row">
+        <div class="column">
+          <div class="head">Yellow</div>
+          <input type="checkbox" id="gray">
+        </div>
+
+        <div class="column">
+          <div class="head">Red</div>
+          <input type="checkbox" id="gray">
+        </div>
+      </div>
+      <input type="text" id="foul" placeholder="Foul"></input>
+
+
     </div>
+
+
+     <!--Human Scouting Screen-->
     <div class="screen">
-      human scouting
+      <div class="head">Human Scouting</div>
+      
+      <input type="text" id="name" placeholder="Name"></input>
+      <input type="text" id="teamNum" placeholder="Team Number"></input>
+      <input type="text" id="matchNum" placeholder="Match Number"></input>
+      
+      <div class="head">Net</div>
+      
+      <div class="row">
+        <div class="column">
+          <div class="head">Score</div>
+          
+          <div class="row">
+            <button class="autoButton"> &lt; </button>
+            <div class="autoCounter">0</div>
+            <button class="autoButton"> &gt; </button>
+          </div>
+
+        </div>
+        
+        <div class="column">
+          <div class="head">Miss</div>
+
+          <div class="row">
+            <button class="autoButton"> &lt; </button>
+            <div class="autoCounter">0</div>
+            <button class="autoButton"> &gt; </button>
+          </div>
+
+        </div>
+      </div>
+
     </div>
+
+     <!--QR Code Screen-->
     <div class="screen">
-      qr
-    </div>
-    <div class="screen">
-      bar code
+      <div class="head">QR</div>
+      
+      <!--Temporary?-->
+      <div id="qrCode">
+        <div id="scanner"></div>
+      </div>
+      <!--Temporary?-->
+
+      <div class="column">
+        <button class="homeButton">Scan again</button>
+        <button class="homeButton">Send info</button>
+        <button class="homeButton">Scan Bar</button>
+      </div>
+
     </div>
     <script src="script.js"></script>
   </body>
